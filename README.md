@@ -1,16 +1,18 @@
-# EventSource [![Build Status](https://secure.travis-ci.org/aslakhellesoy/eventsource.svg)](http://travis-ci.org/aslakhellesoy/eventsource) [![Dependencies](https://david-dm.org/aslakhellesoy/eventsource.svg)](https://david-dm.org/aslakhellesoy/eventsource)
-
-[![NPM](https://nodei.co/npm/eventsource.png?stars&downloads)](https://nodei.co/npm/eventsource/)
-[![NPM](https://nodei.co/npm-dl/eventsource.png)](https://nodei.co/npm/eventsource/)
+# EventSource [![Build Status](https://secure.travis-ci.org/joeybaker/eventsource.svg)](http://travis-ci.org/joeybaker/eventsource) [![Dependencies](https://david-dm.org/joeybaker/eventsource.svg)](https://david-dm.org/joeybaker/eventsource)
 
 This library is a pure JavaScript implementation of the [EventSource](http://www.w3.org/TR/eventsource/) client. The API aims to be W3C compatible.
 
 You can use it with Node.js or as a browser polyfill for
 [browsers that don't have native `EventSource` support](http://caniuse.com/#search=eventsource).
 
+## This Fork
+* Fixes several multiple reconnect issues (these are quite serious)
+* Adds a `timeout` option to manually reconnect after a specified time
+* Allows disabling the reconnection
+
 ## Install
 
-    npm install eventsource
+    npm install @joeybaker/eventsource
 
 ## Example
 
