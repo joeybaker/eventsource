@@ -85,3 +85,10 @@ You can define a `proxy` option for the HTTP request to be used. This is typical
 ```javascript
 var es = new EventSource(url, { proxy: 'http://your.proxy.com' });
 ```
+
+### Disable Reconnect
+The spec says that `Eventsource` should reconnect when the connection errors. This is typically good behavior, but you might want to turn this off.
+
+```javascript
+var es = new EventSource(url, { reconnect: false });
+```
