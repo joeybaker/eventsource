@@ -92,3 +92,11 @@ The spec says that `Eventsource` should reconnect when the connection errors. Th
 ```javascript
 var es = new EventSource(url, { reconnect: false });
 ```
+
+### Timeout the Connection
+To work around the disadvantages of native `Eventsource`, this module uses XHR long-polling to simulate an `Eventsource` object. This can look like an idle connection to servers which can end the connection. This module will auto-reconnect, but if you'd like to avoid server errors, you can manually re-connect after a specified time.
+
+```javascript
+// reconnect after 10 seconds
+var es = new EventSource(url, { time: 10000 });
+```
