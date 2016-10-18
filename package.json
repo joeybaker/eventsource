@@ -1,6 +1,6 @@
 {
   "name": "@joeybaker/eventsource",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "W3C compliant EventSource client for Node.js and browser (polyfill)",
   "keywords": [
     "eventsource",
@@ -14,6 +14,9 @@
   "contributors": [
     "Joey Baker <joey@joeybaker.co>"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/joeybaker/eventsource.git"
